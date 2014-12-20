@@ -1,8 +1,3 @@
-require 'mini_magick'
-require 'opencv'
-
-Face = Struct.new(:filepath)
-
 class Image
   HAAR_FILEPATH = "#{ Dir.pwd }/data/haarcascade_frontalface_alt.xml"
   FACE_DETECTOR = OpenCV::CvHaarClassifierCascade::load(HAAR_FILEPATH)

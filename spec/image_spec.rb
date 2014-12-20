@@ -1,5 +1,4 @@
 require 'helper'
-require_relative '../lib/image.rb'
 
 describe Image do
   let(:image)  { Image.new("#{ Dir.pwd }/spec/fixtures/raw.png") }
